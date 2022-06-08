@@ -1,0 +1,33 @@
+#annual_plan_collection{
+    border: 2px solid black;
+    margin-top: 36px;
+    margin-left: 40px;
+    width:320px; 
+    height: 640px;
+    position: absolute;
+}
+
+ h2{
+    text-align: center;
+}
+
+#text{
+    margin-top:0px;
+    background-color:transparent;
+    border : none;
+}
+
+table{
+    position : absolute;
+    margin-left: 424px;
+    margin-top: 16px;
+}
+
+#annual_plan{
+    float: left;
+}
+
+#monthly_plaln_collection{
+    float: left;
+}
+

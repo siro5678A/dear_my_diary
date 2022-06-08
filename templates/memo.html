@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dear my diary</title>
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../static/css/mainpage.css">
+        <link rel="stylesheet" href="../../static/css/calendar.css">
+        <link rel="stylesheet" href="../../static/css/memo.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">	        
+    </head>
+    
+
+    <body>
+        <header>
+            <a href="../../"><img src="../../static/img/logo.png"></a>
+        </header>
+
+        <div id="mp"> 
+            <div id = "lp">
+                    <settings-cal>
+                        <div class="container">
+                            <div class="calendar">
+                                <div class="month">
+                                    <b class="go-prevmonth">&lt</b>
+                                    <div class="date">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <b class="go-nextmonth">&gt</b>
+                                </div><!--month-->
+                                <div class="weekdays">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="days">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <script src="../../static/js/calendar.js"></script>
+                    </settings-cal>
+
+                    
+                
+               <a href="../../templates/diarypage_table.html" class="list"><img src="../../static/img/diary1.png"></a>
+                <a href="../../templates/plan.html" class="list"><img src="../../static/img/plan1.png" ></a>
+                <a href="../../templates/memo.html" class="list"><img src="../../static/img/memo1.png"></a>
+                <a href="../../templates/board.html" class="list"><img src="../../static/img/board1.png"></a>
+
+
+                </div>
+            
+            
+                <div id = "rp">
+                    <div id = "memo">
+                        <div id ="memo_container">
+                                <div id="menu_bar">
+                                    <ul class="menu">
+                                        <li>
+                                        <a href="#">DIARY</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">22.04.29</a></li>
+                                            <li><a href="#">22.05.17</a></li>
+                                            <li><a href="#">22.05.23</a></li>
+                                            <li><a href="#">22.06.01</a></li>
+                                            <li><a href="#">22.06.07</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">RECIPE</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Diet</a></li>
+                                            <li><a href="#">Restaurant</a></li>
+                                            <li><a href="#">Pasta</a></li>
+                                            <li><a href="#">Greek Yogurt</a></li>
+                                            <li><a href="#">Croiffle</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">TRIP_PLAN</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Busan</a></li>
+                                            <li><a href="#">Jeju</a></li>
+                                            <li><a href="#">Okinawa</a></li>
+                                            <li><a href="#">Hawaii</a></li>
+                                            <li><a href="#">Europe</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">FASHION</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Accessory</a></li>
+                                            <li><a href="#">Top</a></li>
+                                            <li><a href="#">Bottom</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Codibook</a></li>
+                                        </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">ETC</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Bucketlist</a></li>
+                                            <li><a href="#">Photo</a></li>
+                                            <li><a href="#">How_was_myFeel</a></li>
+                                            <li><a href="#">Notice</a></li>
+                                            <li><a href="#">Anything</a></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                        </div>
+                        
+                        <table border="0" align="right">
+                            <tr >
+                                <td>
+                                    <div id = "memo_header">
+                                        <form>
+                                        <textarea id = "title" cols = "50" rows = "2" placeholder = "제목" onfocus="this.placeholder = ''" onblur="this.placeholder = '제목'" ></textarea>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <div id = "memo_body">
+                                        <form>
+                                        <textarea id = "content" cols = "91" rows = "33" placeholder="내용" onfocus="this.placeholder = ''" onblur="this.placeholder = '내용'" overflow="auto"></textarea>
+                                        </form>
+                                    </div>
+                                </td>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <form>
+                                        <input type="submit" id="save" value="SAVE">
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                               
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById("title").style.fontSize = '24px';
+                    document.getElementById("text").style.fontSize = '16px';
+
+                    var textarea = '<textarea>${value}</textarea>';
+                    document.getElementById('title').textContent = 'foo'
+                    $value = 'foo';
+                    $textarea = "<textarea>$value</textarea>";
+                    alert($textarea);
+                </script>
+                
+                <div id = "bookmark">
+                    <div  class="hidden">
+                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                    </div>
+                    <div>
+                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                    </div>
+
+                </div>
+        </div>
+</body>
+</html>

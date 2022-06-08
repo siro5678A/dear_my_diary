@@ -1,0 +1,27 @@
+.qdiv{
+    margin: 30px;
+    padding: 20px;
+    border-color:black;
+
+    border-radius:10px;
+}
+
+#qtitle{
+    background-color: antiquewhite;
+}
+
+#qlist{
+    background-color: ivory;
+}
+
+.textcenter{
+    text-align:center;
+}
+
+.text2{
+    font-size:2em;
+}
+
+.text15{
+    font-size:1.5em;
+}

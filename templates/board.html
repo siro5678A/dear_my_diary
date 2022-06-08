@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dear my diary</title>
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../static/css/mainpage.css">
+        <link rel="stylesheet" href="../../static/css/calendar.css">
+        <link rel="stylesheet" href="../../static/css/board.css">
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <a href="../../"><img src="../../static/img/logo.png"></a>
+        </header>
+
+        <div id="mp">
+            <div id = "lp">
+                    <settings-cal>
+                        <div class="container">
+                            <div class="calendar">
+                                <div class="month">
+                                    <b class="go-prevmonth">&lt</b>
+                                    <div class="date">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <b class="go-nextmonth">&gt</b>
+                                </div><!--month-->
+                                <div class="weekdays">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="days">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="../../static/js/calendar.js"></script>
+                    </settings-cal>
+
+
+                <a href="../../templates/diarypage_table.html" class="list"><img src="../../static/img/diary1.png"></a>
+                <a href="../../templates/plan.html" class="list"><img src="../../static/img/plan1.png" ></a>
+                <a href="../../templates/memo.html" class="list"><img src="../../static/img/memo1.png"></a>
+                <a href="../../templates/board.html" class="list"><img src="../../static/img/board1.png"></a>
+
+                </div>
+
+
+                <div id = "rp">
+                    <div class="qdiv textcenter text15" id="qtitle">
+                        <h1>공지사항</h1>
+                    </div>
+                    <div class="qdiv text2" id="qlist">
+                        <ul>
+                            <li><a href="#">2022.06.05 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">2022.05.27 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">2022.05.16 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">2022.05.08 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">2022.04.29 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">2022.04.21 업데이트 내용안내</a></li>
+                            <br><br><br>
+                            <li><a href="#">이용 설명서</a></li>
+                            <br><br><br>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div id = "bookmark">
+                    <div class="hidden" >
+                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                    </div>
+                    <div >
+                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                    </div>
+
+
+
+                </div>
+
+
+        </div>
+    </body>
+</html>

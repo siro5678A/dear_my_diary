@@ -1,0 +1,23 @@
+.img-box {
+    width: 1030px; height: 220px;
+    text-align: center;
+}
+.pf {
+    margin-top: 60px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.name-box {
+    text-align: center;
+}
+.content {
+    margin-top:70px;
+    width: 1030px; height: 420px;
+}
+.content > div {
+    width: 800px; height: 45px;
+    margin-left:115px; margin-right: 115px; margin-bottom: 15px;
+    border: 1.5px solid;
+    font-size: 25px;
+    line-height: 45px;
+}

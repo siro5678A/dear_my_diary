@@ -1,0 +1,142 @@
+/*menu*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu{
+    width: 240px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left:40px;
+    position: absolute;
+    border-radius: 7px;
+}
+
+.menu > li{
+    width: 80%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fde2c9;
+}
+
+.menu > a{
+    color: #fff;
+}
+
+.submenu > li{
+    line-height: 50px;
+    background-color: antiquewhite;
+}
+
+.submenu{
+    height: 0;
+    overflow: hidden;
+}
+
+.menu > li:hover{
+    background-color: antiquewhite;
+    transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu{
+    height: 250px;
+    transition-duration: 1s;
+}
+
+/*memo_header*/
+textarea{
+    border-radius: 10px;
+    border: none;
+}
+#title{
+    background-color: antiquewhite;
+}
+
+textarea::placeholder{
+    color: #d3d3d3;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content{
+    background-color: antiquewhite;
+}
+
+table{
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+#save{
+    position: relative;
+    float: right;
+    width: 64px;
+    height: 24px;
+}
+
+#mp{
+    width:1500px;
+    height: 720px;  
+    margin-left: 30px;
+}
+#lp {
+    width: 370px;
+    height: 720px;
+    float:left;
+}
+
+.cal {
+    margin-top: 10px;
+    margin-bottom: 80px;   
+    width: 340px; 
+    height: 300px;       
+}
+
+.list{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 290px; height: 30px;
+    background-color: transparent;
+    border: 0;     
+}
+
+
+#rp {
+    width: 1030px;
+    height: 720px;       
+    background-color: white;
+    float:left;
+    border-radius: 30px;
+    box-shadow: 5px 2px 10px #585858;       
+}
+#bookmark{
+    width: 100px;
+    height: 950px;
+    float:left;
+}
+.bookmarker{
+    width: 80px; height: 120px;
+    margin-right: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float:right;
+    border-radius: 41px;   
+}
+
+.hidden{
+    width: 100px;  
+    float:right;
+    overflow: hidden;
+}
+

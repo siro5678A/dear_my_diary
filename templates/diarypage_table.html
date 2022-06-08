@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>dear my diary</title>
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../static/css/mainpage.css">
+		<link rel="stylesheet" href="../../static/css/calendar.css">
+        <link rel="stylesheet" href="../../static/css/diarypage_table.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+
+        	        
+    </head>
+
+
+    <body>   
+        <header>
+            <a href="../../"><img src="../../static/img/logo.png"></a>
+        </header>
+
+        <div id="mp"> 
+            <div id = "lp">
+                <settings-cal>
+                    <div class="container">
+                        <div class="calendar">
+                            <div class="month">
+                                <b class="go-prevmonth">&lt</b>
+                                <div class="date">
+                                    <h1></h1>
+                                    <p></p>
+                                </div>
+                                <b class="go-nextmonth">&gt</b>
+                            </div><!--month-->
+                            <div class="weekdays">
+                                <div>일</div>
+                                <div>월</div>
+                                <div>화</div>
+                                <div>수</div>
+                                <div>목</div>
+                                <div>금</div>
+                                <div>토</div>
+                            </div>
+                            <div class="days">
+                                
+                            </div>
+                        </div>
+                    </div>
+            
+                    <script src="../../static/js/calendar.js"></script>
+                </settings-cal>                
+                
+                <a href="../../templates/diarypage_table.html" class="list"><img src="../../static/img/diary1.png"></a>
+                <a href="../../templates/plan.html" class="list"><img src="../../static/img/plan1.png" ></a>
+                <a href="../../templates/memo.html" class="list"><img src="../../static/img/memo1.png"></a>
+                <a href="../../templates/board.html" class="list"><img src="../../static/img/board1.png"></a>
+
+                </div>
+            
+            
+                <div id = "rp">
+                    <div class="weekly_header">
+                        <div class="weekly_nav">
+                            <b class="go-prevweek">&lt</b>
+                            <div class="date2">
+                                <p></p>
+                            </div>
+                            <b class="go-nextweek">&gt</b>
+                        </div>   
+                    </div>
+
+                    <div class="weekly_main">
+                        <table border="1">
+                            <thead>
+                                <tr class="weekly_days">
+                                    <th class="weekly_day">일</th>
+                                    <th class="weekly_day">월</th>
+                                    <th class="weekly_day">화</th>
+                                    <th class="weekly_day">수</th>
+                                    <th class="weekly_day">목</th>
+                                    <th class="weekly_day">금</th>
+                                    <th class="weekly_day">토</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="todolist" id="calendar">
+
+                                </tr>
+                                <form>
+                                    <tr class="todo" ></tr>
+                                </form>
+                                
+                                   
+                                <tr class="diarys">
+                                    <!--
+                                    <td><button class="diarybtn wh100">diary</button></td>
+                                    
+                                    -->
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+
+                        <br>
+
+                        
+
+
+                            
+                                <div><b>매일 할 일</b></div>
+                                <br>
+                            
+                                <td  class="todolabel">
+                                    <div>
+                                        <form class="todo-form">
+                                            <input type="text" class="todo-input" placeholder="매일 할 일을 입력하세요">
+                                            <button type="submit" class="add-button todolabelplus">+</button>
+                                          </form>
+                                        <ul class="todo-items">
+                                            
+                                          </ul>
+                                    </div>
+                                                                       
+                                
+                        <script src="../../static/js/todoplan.js"></script>
+                            
+                    </div>
+
+                       
+                </div>
+                
+
+                
+                <div id = "bookmark">
+                    <div >
+                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                    </div>
+
+                    
+                    
+                </div>
+            
+
+        </div>
+        <!--
+        <script src="diarypage.js" defer></script>
+        --> 
+        <script src="../../static/js/todo.js"></script>
+        
+    </body>
+</html>

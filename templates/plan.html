@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dear my diary</title>
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../static/css/mainpage.css">
+        <link rel="stylesheet" href="../../static/css/calendar.css">
+        <link rel="stylesheet" href="../../static/css/plan.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <a href="../../"><img src="../../static/img/logo.png"></a>
+        </header>
+
+        <div id="mp">
+            <div id = "lp">
+                    <settings-cal>
+                        <div class="container">
+                            <div class="calendar">
+                                <div class="month">
+                                    <b class="go-prevmonth">&lt</b>
+                                    <div class="date">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <b class="go-nextmonth">&gt</b>
+                                </div><!--month-->
+                                <div class="weekdays">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="days">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="../../static/js/calendar.js"></script>
+                    </settings-cal>
+
+
+               <a href="../../templates/diarypage_table.html" class="list"><img src="../../static/img/diary1.png"></a>
+                <a href="../../templates/plan.html" class="list"><img src="../../static/img/plan1.png" ></a>
+                <a href="../../templates/memo.html" class="list"><img src="../../static/img/memo1.png"></a>
+                <a href="../../templates/board.html" class="list"><img src="../../static/img/board1.png"></a>
+
+                </div>
+
+
+                <div id = "rp">
+                    <!--사이트 내용 들어갈 부분
+                        ex) planpage.html,planpage.css 따로 저장-->
+                    {% block content %}
+                     <div id = "annual_plan_collection">
+                            <h2><u>연간계획</u></h2>
+                            <form method="post" action="{{ url_for('year.create') }}">
+                                <textarea style='resize : none;' id = "text" name="content" cols = "41" rows = "39">{% for yl in year_list %}{{ yl.content }}{% endfor %}</textarea>
+                                <input type="submit" value="저장">
+                            </form>
+                        </div>
+
+                        <div id = "monthly_plan_collection">
+                            <form>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><h4>1 JAN</h4></td>
+                                            <td><h4>2 FEB</h4></td>
+                                            <td><h4>3 MAR</h4></td>
+                                        </tr>
+                                        <tr>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                         </tr>
+                                         <tr>
+                                            <td><h4>4 APR</h4></td>
+                                            <td><h4>5 MAY</h4></td>
+                                            <td><h4>6 JUN</h4></td>
+                                        </tr>
+                                         <tr>
+                                            <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                         </tr>
+                                         <tr>
+                                            <td><h4>7 JUL</h4></td>
+                                            <td><h4>8 AUG</h4</td>
+                                            <td><h4>9 SEP</h4></td>
+                                        </tr>
+                                         <tr>
+                                            <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>10 OCT</h4></td>
+                                            <td><h4>11 NOV</h4></td>
+                                            <td><h4>12 DEC</h4></td>
+                                        </tr>
+                                        <tr>
+                                            <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                             <td ><textarea rows = "6" wrap="hard"></textarea></td>
+                                        </tr>
+                                        <td><input type="submit" value="저장"></td>
+                                     </tbody>
+                                 </table>
+                            </form>
+                        </div>
+                </span>
+                {% endblock %}
+                </div>
+
+
+                <div id = "bookmark">
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                    </div>
+                    <div>
+                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                    </div>
+
+
+
+                </div>
+
+
+        </div>
+
+</html>
